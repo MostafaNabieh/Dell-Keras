@@ -1,19 +1,11 @@
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
-from tflearn.layers.conv import global_avg_pool
 
 from keras.layers.normalization import BatchNormalization
-from keras.models import Model, load_model
-from keras.layers import Input,Concatenate
-from keras.layers.core import Dropout, Lambda
+from keras.layers import Concatenate
 from keras.layers.convolutional import Conv3D, Conv3DTranspose
 from keras.layers.pooling import MaxPooling3D
-from keras.layers.merge import concatenate
-from keras.callbacks import EarlyStopping, ModelCheckpoint
-from keras import backend as K
-from keras.layers import Activation, Dense
 from keras.activations import relu,softmax
-from keras.layers import Conv3DTranspose
 from keras.initializers import Initializer
 # 3D unet graph
 def unet(inputI, output_channel):
