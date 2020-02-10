@@ -9,8 +9,8 @@ try:
 except ImportError:
     import urllib.request
     print('Downloading group_norm.py in the current directory...')
-    url = 'https://raw.githubusercontent.com/titu1994/Keras-Group-Normalization/master/group_norm.py'
-    urllib.request.urlretrieve(url, "group_norm.py")
+    url = 'https://raw.githubusercontent.com/mostafanabiehMourad/Dell-Keras/master/Code/norm.py'
+    urllib.request.urlretrieve(url, "norm.py")
     from group_norm import GroupNormalization
 
 
