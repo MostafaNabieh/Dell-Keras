@@ -5,10 +5,10 @@ from keras.layers import Input, Reshape, Flatten, Dropout, SpatialDropout3D
 from keras.optimizers import adam
 from keras.models import Model
 try:
-    from group_norm import GroupNormalization
+    from norm import GroupNormalization
 except ImportError:
     import urllib.request
-    print('Downloading group_norm.py in the current directory...')
+    print('Downloading norm.py in the current directory...')
     url = 'https://raw.githubusercontent.com/mostafanabiehMourad/Dell-Keras/master/Code/norm.py'
     urllib.request.urlretrieve(url, "norm.py")
     from group_norm import GroupNormalization
